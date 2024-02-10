@@ -72,16 +72,16 @@ btnRoll.addEventListener('click', function () {
 
     // 3. Check for rolled 1
     if (dice !== 1) {
+       // Stop pigface shake
+       pigface.classList.remove('shake');
+       
       // Add dice to current score
       currentScore += dice;
       document.getElementById(
         `current--${activePlayer}`
       ).textContent = currentScore;
-      // Stop pigfqce shake
-      pigface.classList.remove('shake');
     } else {
       // Shake pig face
-      player0El.classList.add('player--active');
       pigface.classList.add('shake');
 
       // Switch to next player
