@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  width: 100%;
+  color: #333;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+h1 {
+  font-size: 6rem;
+  color:aliceblue;
+  letter-spacing: 10px;
+  margin:0;
+  margin-top: 30px;
+}
+
+.pigface {
+  margin-bottom: 50px;
+  width: 120px;
+}
+
+.btn--new {
+  margin-left: 42%;
+  margin-bottom: 40px;;
+}
+
+/* LAYOUT */
+main {
+  position: relative;
+  width: auto;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+}
+
+.player {
+  flex: 25%;
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+}
+
+/* ELEMENTS */
+.name {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  word-spacing: 1px;
+  font-weight: 300;
+}
+
+.score {
+  font-size: 6rem;
+  font-weight: 300;
+  color: #c7365f;
+  margin-bottom: auto;
+}
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.player--active .name {
+  font-weight: 700;
+}
+.player--active .score {
+  font-weight: 400;
+}
+
+.player--active .current {
+  opacity: 1;
+}
+
+.current {
+  background-color: #c7365f;
+  opacity: 0.8;
+  border-radius: 9px;
+  color: #fff;
+  width: 80%;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.75s;
+}
+
+.current-label {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #ddd;
+}
+
+.current-score {
+  font-size: 3.2rem;
+}
+
+button {
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.btn::first-letter {
+  font-size: 2rem;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.btn--roll {
+  display: inline;
+    margin-top: 40px;
+    margin-left: 120px;
+    margin-right: 30px;
+}
+
+.btn--hold {
+  display: inline;
+}
+
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.dice {
+  position: flex;
+  margin-top: 35px;
+  margin-left:20%;
+  transform: translateX(-50%);
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.player--winner {
+  background-color: #2f2f2f;
+}
+
+.player--winner .name {
+  font-weight: 700;
+  color: #c7365f;
+}
+
+.hidden {
+  display: none
+}
+
+.pigface:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s; 
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite; 
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.shake {
+  /* Start the shake animation and make the animation last for 3 seconds */
+  animation: shake .5s; 
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: 4; 
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
