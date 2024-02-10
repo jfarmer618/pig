@@ -32,13 +32,13 @@ h1 {
 }
 
 .pigface {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   width: 120px;
 }
 
 .btn--new {
   margin-left: 42%;
-  margin-bottom: 40px;;
+  margin-bottom: 30px;;
 }
 
 /* LAYOUT */
@@ -57,7 +57,7 @@ main {
 
 .player {
   flex: 25%;
-  padding: 3.5rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,7 +76,7 @@ main {
   font-size: 6rem;
   font-weight: 300;
   color: #c7365f;
-  margin-bottom: auto;
+  margin-bottom: 10px;;
 }
 
 .player--active {
@@ -98,7 +98,7 @@ main {
   opacity: 0.8;
   border-radius: 9px;
   color: #fff;
-  width: 80%;
+  /* width: 90%; */
   padding: 2rem;
   text-align: center;
   transition: all 0.75s;
@@ -107,12 +107,12 @@ main {
 .current-label {
   text-transform: uppercase;
   margin-bottom: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #ddd;
 }
 
 .current-score {
-  font-size: 3.2rem;
+  font-size: 4rem;
 }
 
 button {
