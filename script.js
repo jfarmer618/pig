@@ -15,6 +15,7 @@ const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
 
 let scores, currentScore, activePlayer, playing;
+let audio = document.getElementById("myAudio");
 
 // Starting conditions
 const init = function () {
@@ -83,6 +84,9 @@ btnRoll.addEventListener('click', function () {
     } else {
       // Shake pig face
       pigface.classList.add('shake');
+
+      // Play pig sound
+      audio.play();
 
       // Switch to next player
       switchPlayer();
