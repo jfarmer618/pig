@@ -149,7 +149,7 @@ button {
 }
 
 .btn:active {
-  transform: translate(-5%, 3px);
+  transform: translate(-5%, 2px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 
