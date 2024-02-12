@@ -30,7 +30,7 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   color:aliceblue;
   letter-spacing: 10px;
   margin:0;
@@ -38,12 +38,12 @@ h1 {
 }
 
 .pigface {
-  margin-bottom: 40px;
-  width: 100px;
+  margin-bottom: 20px;
+  width: 70px;
 }
 
 .btn {
- margin: 20px;
+ margin: 10px;
 }
 
 /* LAYOUT */
@@ -58,7 +58,7 @@ main {
   overflow: hidden;
   display: flex;
   margin-top: 10px; 
-  margin-bottom: 20px; 
+  margin-bottom: 10px; 
 }
 
 .player {
@@ -104,8 +104,6 @@ main {
   opacity: 0.8;
   border-radius: 9px;
   color: #fff;
-  /* width: auto;
-  height: auto; */
   padding: 2rem;
   text-align: center;
   transition: all 0.75s;
@@ -128,7 +126,7 @@ button {
   background: none;
   border: none;
   font-family: inherit;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 400;
@@ -160,8 +158,8 @@ button {
 
 .dice {
   margin-top: 10px;
-  margin-bottom: 20px;
-  height: 10rem;
+  margin-bottom: 10px;
+  height: 8rem;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
